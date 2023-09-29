@@ -1,0 +1,212 @@
+*{
+    
+    font-family: 'Plus Jakarta Sans';
+}
+body{
+    background: #f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 185px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    font-weight: 300;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.navbar-brand{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.nav-link{
+    font-size: 16px;
+}
+.nav-link.active{
+    font-weight: 700;
+}
+
+/* Responsive css */
+@media only screen and (min-width :768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+}
+.about-text h2{
+    font-weight: 700;
+    line-height: 2.0;
+}
+
+.content{
+    position: relative;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    flex-direction: column;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+.contact .content p{
+    font-weight: 500;
+}
+.container-bg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-bg .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container-bg .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+/* .container-bg .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+} */
+.container-bg .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    font-weight: 500;
+    color: white;
+}
+.container-bg .contactInfo .box .text h3{
+    font-size: 23px;
+    font-weight: 700;
+}
+.container-bg .contactInfo .box .text p{
+    font-weight: 500;
+    font-size: 14px;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background-color: white;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: black;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox button{
+    width: 100px;
+    background: #FFC000;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+@media (max-width: 991px) {
+    .contact{
+        padding: 50px;
+    }
+    .container-bg{
+        flex-direction: column;
+    }
+    .container-bg .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container-bg .contactInfo{
+        width: 100%;
+    }
+}
