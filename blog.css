@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 
-*,
-*::before,
-*::after {
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -11,33 +9,34 @@
 
 body {
   font-family: 'Plus Jakarta Sans';
-  display: grid;
+  display:flexbox;
   place-items: center;
   height: 100vh;
-  background: #7f7fd5;
-  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: white;
+  
 }
 
+/* Navbar */
 .navbar-brand{
-    font-size: xx-large;
-    font-weight: 600;
+  font-size: xx-large;
+  font-weight: 600;
 }
 .nav-link{
-    font-size: 16px;
+  font-size: 16px;
 }
 .nav-link.active{
-    font-weight: 700;
+  font-weight: 700;
 }
 @media only screen and (max-width: 767px){
-    .navbar-nav{
-        text-align: center;
-    }
+  .navbar-nav{
+      text-align: center;
+  }
 }
 
-.container {
-  display: flex;
+.container-blog {
+  display:flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:center;
   max-width: 1200px;
   margin-block: 2rem;
   gap: 2rem;
