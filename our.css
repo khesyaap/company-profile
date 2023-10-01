@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+}
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans';
+    background: white;
+}
+
+/* Navbar */
+.navbar-brand{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.nav-link{
+    font-size: 16px;
+}
+.nav-link.active{
+    font-weight: 700;
+}
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+}
+
+/* Our Product */
+.our-product{
+    position: relative;  
+    height: 650px;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+    left: 6.5%;
+    bottom: 90px;
+  }  
+.text-title-product h2{
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 40px;
+}
+.swiper{
+    width: 950px;
+  }
+.card{
+    position: relative;
+    background: #fff;
+    border-radius: 100px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+.card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #FFC000;
+    border-radius: 20px 20px 0 0;
+  }
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+  }
+.our-product .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #FFC000;
+  }
+.our-product .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+.card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.card .media-icons i{
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+.card .media-icons i:hover{
+    opacity: 1;
+  }
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #000;
+  } 
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+  }
+.name-profession .profession{
+    font-size:15px;
+    font-weight: 500;
+  } 
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+  }
+.card .rating i{
+    font-size: 18px;
+    margin: 0 2px;
+    color: #FFC000;
+  }
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+.card .button button{
+    background: #FFC000;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+.button button:hover{
+    background: #F4E869;
+  }
+.swiper-pagination{
+    position: absolute;
+  }
+.swiper-pagination-bullet{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: #FFC000;
+  }
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: #FFC000;
+    transition: all 0.3s ease;
+  }
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: #FFC000;
+  }
+.credit a{
+    text-decoration: none;
+    color: #FFC000;
+    font-weight: 800;
+  }
+.credit {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+/* Our Client */
+.container-2 h2{
+  text-align: center;
+  padding: 30px;
+  margin-top: 0%;
+}
+.slick-slide{
+  margin: 0 50px;
+}
+.slick-slide img{
+  width: 100%;
+}
+.slick-slider{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+.slick-list{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block
+}
+.slick-slide{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide img{
+  display: block;
+}
+.slick-initialized .slick-slide{
+  display: block;
+}
+.copy{
+  padding-top: 250px;
+}
+
+/* Our Partner */
+.container-1 h2{
+    text-align: center;
+    padding: 30px;
+    margin-top: 7%;
+}
+.slick-slide{
+    margin: 0 25px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+.copy{
+    padding-top: 250px;
+}
